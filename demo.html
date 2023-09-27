@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="sign.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-In</title>
+    <style>
+        /* sign.css */
+
+/* Center the form on the page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Style the form container */
+div {
+    margin-bottom: 10px;
+}
+
+/* Style labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Style text inputs and selects */
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Hover effect for the submit button */
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <form>
+    <div>
+        <label for="name">Username:</label>
+        <input type="text" placeholder="Enter Username" id="name" name="username" required>
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" placeholder="Enter Password" id="password" name="password" required>
+    </div>
+    <div>
+        <label for="mobileno">Mobile No:</label>
+        <input type="text" placeholder="Enter Mobile No" id="mobileno" name="mobileno" required>
+    </div>
+    <div>
+        <label for="country-state">State:</label>
+        <select id="country-state" name="country-state" required>
+            <option value="">Select State</option>
+            <option value="">Select state</option>
+            <option value="AN">Andaman and Nicobar Islands</option>
+            <option value="AP">Andhra Pradesh</option>
+            <option value="AR">Arunachal Pradesh</option>
+            <option value="AS">Assam</option>
+            <option value="BR">Bihar</option>
+            <option value="CH">Chandigarh</option>
+            <option value="CT">Chhattisgarh</option>
+            <option value="DN">Dadra and Nagar Haveli</option>
+            <option value="DD">Daman and Diu</option>
+            <option value="DL">Delhi</option>
+            <option value="GA">Goa</option>
+            <option value="GJ">Gujarat</option>
+            <option value="HR">Haryana</option>
+            <option value="HP">Himachal Pradesh</option>
+            <option value="JK">Jammu and Kashmir</option>
+            <option value="JH">Jharkhand</option>
+            <option value="KA">Karnataka</option>
+            <option value="KL">Kerala</option>
+            <option value="LA">Ladakh</option>
+            <option value="LD">Lakshadweep</option>
+            <option value="MP">Madhya Pradesh</option>
+            <option value="MH">Maharashtra</option>
+            <option value="MN">Manipur</option>
+            <option value="ML">Meghalaya</option>
+            <option value="MZ">Mizoram</option>
+            <option value="NL">Nagaland</option>
+            <option value="OR">Odisha</option>
+            <option value="PY">Puducherry</option>
+            <option value="PB">Punjab</option>
+            <option value="RJ">Rajasthan</option>
+            <option value="SK">Sikkim</option>
+            <option value="TN">Tamil Nadu</option>
+            <option value="TG">Telangana</option>
+            <option value="TR">Tripura</option>
+            <option value="UP">Uttar Pradesh</option>
+            <option value="UT">Uttarakhand</option>
+            <option value="WB">West Bengal</option>
+        </select>
+    </div>
+    <div>
+        <label for="tamil-nadu-districts">District:</label>
+        <select id="tamil-nadu-districts" name="tamil-nadu-districts" required>
+            <option value="">Select District</option>
+            <option value="">Select District</option>
+            <option value="Ariyalur">Ariyalur</option>
+            <option value="Chengalpattu">Chengalpattu</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Coimbatore">Coimbatore</option>
+            <option value="Cuddalore">Cuddalore</option>
+            <option value="Dharmapuri">Dharmapuri</option>
+            <option value="Dindigul">Dindigul</option>
+            <option value="Erode">Erode</option>
+            <option value="Kallakurichi">Kallakurichi</option>
+            <option value="Kanchipuram">Kanchipuram</option>
+            <option value="Kanyakumari">Kanyakumari</option>
+            <option value="Karur">Karur</option>
+            <option value="Krishnagiri">Krishnagiri</option>
+            <option value="Madurai">Madurai</option>
+            <option value="Nagapattinam">Nagapattinam</option>
+            <option value="Namakkal">Namakkal</option>
+            <option value="Nilgiris">Nilgiris</option>
+            <option value="Perambalur">Perambalur</option>
+            <option value="Pudukkottai">Pudukkottai</option>
+            <option value="Ramanathapuram">Ramanathapuram</option>
+            <option value="Ranipet">Ranipet</option>
+            <option value="Salem">Salem</option>
+            <option value="Sivaganga">Sivaganga</option>
+            <option value="Tenkasi">Tenkasi</option>
+            <option value="Thanjavur">Thanjavur</option>
+            <option value="Theni">Theni</option>
+            <option value="Thoothukudi">Thoothukudi</option>
+            <option value="Tiruchirappalli">Tiruchirappalli</option>
+            <option value="Tirunelveli">Tirunelveli</option>
+            <option value="Tirupathur">Tirupathur</option>
+            <option value="Tiruppur">Tiruppur</option>
+            <option value="Tiruvallur">Tiruvallur</option>
+            <option value="Tiruvannamalai">Tiruvannamalai</option>
+            <option value="Tiruvarur">Tiruvarur</option>
+            <option value="Vellore">Vellore</option>
+            <option value="Viluppuram">Viluppuram</option>
+            <option value="Virudhunagar">Virudhunagar</option>
+        </select>
+    </div>
+   
+        <button type="submit"><a href="login.html">Login</a></button>
+    </form>
+</body>
+</html>

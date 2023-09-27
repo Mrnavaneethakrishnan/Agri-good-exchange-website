@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Information</title>
+</head>
+<body>
+    <h1>Seller Information Form</h1>
+    <form action="process_seller.php" method="POST">
+        <div>
+            <label for="seller_name">Seller Name:</label>
+            <input type="text" id="seller_name" name="seller_name" required>
+        </div>
+        <div>
+            <label for="seller_email">Email:</label>
+            <input type="email" id="seller_email" name="seller_email" required>
+        </div>
+        <div>
+            <label for="seller_phone">Phone Number:</label>
+            <input type="tel" id="seller_phone" name="seller_phone">
+        </div>
+        <div>
+            <label for="Product">Product Name:</label>
+            <input type="text" id="Product" name="Product name">
+        </div>
+        <div>
+            <label for="Quantity">Product Quantity:</label>
+            <input type="tel" id="Quantity" name="Quantity">
+        </div>
+        <div>
+            <label for="Price">Price:</label>
+            <input type="tel" id="Price" name="Price">
+        </div>
+        <div>
+            <label for="seller_address">Address:</label>
+            <textarea id="seller_address" name="seller_address" rows="4"></textarea>
+        </div>
+        <div>
+            <label for="seller_product">Product/Service Offered:</label>
+            <input type="text" id="seller_product" name="seller_product" required>
+        </div>
+        <div>
+            <label for="seller_description">Brief Description:</label>
+            <textarea id="seller_description" name="seller_description" rows="4"></textarea>
+        </div>
+        <button type="submit"> <a href="file:///C:/Users/hp/Desktop/project/submit.html"> submit</a></button>
+    </form>
+</body>
+</html>
